@@ -1,0 +1,38 @@
+.griding{
+     display: inline-grid;
+     grid-template-columns: repeat(2);
+     grid-gap: 20px;
+}
+ #movies{
+  display: grid;
+  grid-template-columns: auto auto auto;
+   justify-content: center;
+   gap:5px;
+   align-items: center;
+   margin-top: 10px;
+ }
+
+  #search-input {
+       min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+  }
+  .title{
+        font-weight: bold;
+        font-size: 12px;
+  }
+  .form-control{
+     width: 400px;
+}
+
+ @media only screen and (max-width: 600px) {
+     #movies{
+          grid-template-columns: auto auto;
+     }
+     .form-control{
+          width: 300px;
+     }
+   }
